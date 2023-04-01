@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <script>
+        function getTxt(){
+            let txtvalue = document.getElementById("name").value;   
+            let lastnamevalue = document.getElementById("lastname").value;
+            localStorage.setItem("passvalue", txtvalue);
+            localStorage.setItem("passlastname", lastnamevalue);
+            
+        }   
+    </script>
+</head>
+<body>
+    <p>enter name</p>
+    
+
+<form action="goto.html">
+    <input type="text" id="name" name="name">
+    <p>lastname</p>
+    <input type="text" id="lastname" name="lastname">
+    <input type="submit" value="submit" onclick="getTxt()">
+</form>
+
+</body> 
+</html>

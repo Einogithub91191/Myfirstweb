@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+   hello, <span id="result"></span><br><br>
+    your lastname: <span id="lastnameresult"></span>
+    <p id="fullname1"></p>
+   <script>
+        let a = document.getElementById("result").innerHTML = localStorage.getItem("passvalue");
+        let b = document.getElementById("lastnameresult").innerHTML = localStorage.getItem("passlastname");
+        let c = a+b;
+        document.getElementById("fullname1").innerHTML =  "Your full name is "+a+ " "+b;
+        
+        </script>
+  
+
+</body>
+</html>
